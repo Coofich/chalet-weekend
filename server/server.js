@@ -98,7 +98,7 @@ app.get('/api/photos', async (req, res) => {
 
 app.post('/api/photos', requireAuth, upload.single('photo'), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-  const fileUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+  const fileUrl = `/uploads/${req.file.filename}`;
   try {
     const [result] = await pool.query('INSERT INTO chalet_photos (url) VALUES (?)', [fileUrl]);
     res.json({ id: result.insertId, url: fileUrl });
@@ -109,7 +109,7 @@ app.post('/api/photos', requireAuth, upload.single('photo'), async (req, res) =>
 
 app.post('/api/photos/about', requireAuth, upload.single('photo'), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-  const fileUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+  const fileUrl = `/uploads/${req.file.filename}`;
   try {
     const [rows] = await pool.query('SELECT url FROM chalet_photos WHERE id = 999');
     if (rows.length > 0) {
@@ -132,7 +132,7 @@ app.post('/api/photos/about', requireAuth, upload.single('photo'), async (req, r
 
 app.post('/api/photos/update/:id', requireAuth, upload.single('photo'), async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-  const fileUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+  const fileUrl = `/uploads/${req.file.filename}`;
   const photoId = parseInt(req.params.id);
   try {
 
