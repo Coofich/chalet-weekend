@@ -39,7 +39,7 @@ export const CottageBlock = ({ activePhoto, sectionPhotos, setActivePhoto }: Cot
         <div className="lg:col-start-8 lg:col-span-4 pt-0 lg:pt-4 flex flex-col items-start text-left h-full">
           <ul className="space-y-4 text-[16px] font-medium text-chalet-text-dark opacity-90 mb-10 w-full">
             <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> До 6 гостей</li>
-            <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> 2 спальні кімнати</li>
+            <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> 3 спальні кімнати</li>
             <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> Кухня з усім необхідним</li>
             <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> Санвузол</li>
             <li className="flex items-center gap-3"><CheckSquare className="w-5 h-5 opacity-70" strokeWidth={1.5} /> Вітальня з панорамним видом</li>
