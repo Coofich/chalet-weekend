@@ -111,10 +111,7 @@ export const ContactForm = ({ startDate, endDate, holdId, setIsReserving, setTim
               <Phone className="w-5 h-5 text-chalet-dark stroke-[1.5]" />
               <span>+380 67 688 24 77</span>
             </div>
-            <div className="flex items-center gap-4">
-              <Camera className="w-5 h-5 text-chalet-dark stroke-[1.5]" />
-              <span>@chalet_weekend2023</span>
-            </div>
+            
             <div className="flex items-center gap-4">
               <MapPin className="w-5 h-5 text-chalet-dark stroke-[1.5]" />
               <span>Івано-Франківська область,<br className="md:hidden" /> с. Яблуниця,<br className="md:hidden" /> Діл, 1736</span>

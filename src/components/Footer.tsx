@@ -1,4 +1,5 @@
 import { Camera, Send } from 'lucide-react';
+import { FaInstagram } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
@@ -33,7 +34,7 @@ export const Footer = () => {
           <h5 className="font-bold text-[15px] md:text-[14px] text-white mb-0 md:mb-5 w-1/2 md:w-auto">Ми в соцмережах</h5>
           <div className="flex gap-4 w-1/2 md:w-auto">
             <a href="https://www.instagram.com/chalet_weekend2023?igsh=N25ydDZjYW5sMnl3" className="hover:opacity-80 transition-opacity text-white">
-              <Camera className="w-8 h-8 md:w-6 md:h-6 stroke-[1.5]" />
+              <FaInstagram className="w-8 h-8 md:w-6 md:h-6" />
             </a>
             <a href="https://t.me/Sandra_HRM" className="hover:opacity-80 transition-opacity text-white">
               <Send className="w-8 h-8 md:w-6 md:h-6 stroke-[1.5]" />
